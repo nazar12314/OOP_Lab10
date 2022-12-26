@@ -4,7 +4,12 @@ import java.time.LocalDate;
 
 public class Login {
 
-    public static Client login(LoginMethod loginMethod, String userMail, Country country, String date) {
+    public static Client login(
+            LoginMethod loginMethod,
+            String userMail,
+            Country country,
+            String date
+    ) {
         if (loginMethod == LoginMethod.TWITTER) {
             return new TwitterClient(new TwitterUser(
                     userMail,
