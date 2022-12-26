@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import java.time.Month;
 
-public class Task2Test {
+public class TaskTwoTest {
 
     @Test
     public void testMessageSender() {
@@ -20,8 +20,10 @@ public class Task2Test {
 
         Assertions.assertDoesNotThrow(
                 () -> messageSender.send("Hello world", facebookClient, Country.Ukraine),
-                "We can't send this message:" +
-                        " either this country is not supported" +
+                "We can't send this message:"
+                        +
+                        " either this country is not supported"
+                        +
                         " or the receiver was not active in last 1 hour"
                 );
 

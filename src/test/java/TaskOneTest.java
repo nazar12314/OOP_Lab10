@@ -1,7 +1,7 @@
 import org.example.singleton_task1.User;
 import org.junit.jupiter.api.Test;
 
-public class Task1Test {
+public class TaskOneTest {
 
     @Test
     public void testAddingUserToDatabase() {

@@ -17,8 +17,10 @@ public class MessageSender {
         }
 
         throw new IllegalArgumentException(
-                "We can't send this message:" +
-                        " either this country is not supported" +
+                "We can't send this message:"
+                        +
+                        " either this country is not supported"
+                        +
                         " or the receiver was not active in last 1 hour"
         );
     }
